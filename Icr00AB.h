@@ -26,7 +26,7 @@ typedef struct _ICR_Cfg0097 {
 	U08	bGenAdr;	// адресный код внутр. генератора: 0x49 по умолчанию
 	U32	nGenRef;    // заводская установка частоты внутр. генератора (Гц)
 	U32	nGenRefMax; // максимальная частота внутр. генератора (Гц)
-	U32	nDDSType; // тип микросхемы DDS: 0 - нет, 1 - AD9912
+	U08	bDDSType; // тип микросхемы DDS: 0 - нет, 1 - AD9912
 } ICR_Cfg0097, *PICR_Cfg0097, ICR_CfgAdm, *PICR_CfgAdm;
 
 #pragma pack(pop)    
