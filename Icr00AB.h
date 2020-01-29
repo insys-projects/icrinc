@@ -1,20 +1,20 @@
-//****************** File Icr0097.h ***********************
+//****************** File Icr00AB.h ***********************
 //
 //  Определения констант и структур 
 //	для работы с конфигурационным ППЗУ
-//  для субмодулей FM816x250M, FM416x250M, FM416x100M, XM416x250M
+//  для субмодулей FM216x100MRF
 //
 //*********************************************************
 
-#ifndef _ICR0097_H
- #define _ICR0097_H
+#ifndef _ICR00AB_H
+ #define _ICR00AB_H
 
 #pragma pack(push, 1)    
 
-#define ADM_CFG_TAG 0x0097
+#define ADM_CFG_TAG 0x00AB
 
 // Конфигурационные параметры субмодуля
-typedef struct _ICR_Cfg0097 {
+typedef struct _ICR_Cfg00AB {
 	U16	wTag;		// тэг структуры (ADM_CFG_TAG)
 	U16	wSize;		// размер всех следующих полей структуры
 	U08	bAdmIfNum;	// номер интерфейса ADM
@@ -27,10 +27,10 @@ typedef struct _ICR_Cfg0097 {
 	U32	nGenRef;    // заводская установка частоты внутр. генератора (Гц)
 	U32	nGenRefMax; // максимальная частота внутр. генератора (Гц)
 	U08	bDDSType; // тип микросхемы DDS: 0 - нет, 1 - AD9912
-} ICR_Cfg0097, *PICR_Cfg0097, ICR_CfgAdm, *PICR_CfgAdm;
+} ICR_Cfg00AB, *PICR_Cfg00AB, ICR_CfgAdm, *PICR_CfgAdm;
 
 #pragma pack(pop)    
 
-#endif // _ICR0097_H
+#endif // _ICR00AB_H
 
-// ****************** End of file Icr0097.h **********************
+// ****************** End of file Icr00AB.h **********************
